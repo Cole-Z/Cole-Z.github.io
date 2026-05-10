@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Cole Zill is a software and security engineer building secure systems, automation, and local-first AI infrastructure."
+    >
+    <title>Cole Zill | Software & Security Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Cole Zill home">
+          <span class="brand-mark">CZ</span>
+          <span class="brand-copy">
+            <span>Cole Zill</span>
+            <small>Software / Security</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#project">Mi-Agent</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <span class="toggle-track" aria-hidden="true">
+            <span class="toggle-icon toggle-icon-dark">☾</span>
+            <span class="toggle-icon toggle-icon-light">☼</span>
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Phoenix, AZ / secure systems / AI infrastructure</p>
+            <h1 id="hero-title">Software engineer building secure, reliable systems with a security-first mindset.</h1>
+            <p class="hero-lede">
+              I work across software engineering, security architecture, automation, and AI-enabled systems.
+              My focus is practical: make complex systems safer, easier to operate, and resilient under real constraints.
+            </p>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button primary" href="#project">View featured project</a>
+              <a class="button secondary" href="assets/cole-zill-resume.docx">View resume</a>
+              <a class="button secondary" href="mailto:coleazill@gmail.com">Email me</a>
+            </div>
+          </div>
+
+          <aside class="status-panel" aria-label="Engineer profile summary">
+            <div class="window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <code>profile.sys</code>
+            </div>
+            <div class="terminal-lines">
+              <p><span>&gt;</span> role: Software / Systems Engineer</p>
+              <p><span>&gt;</span> domain: secure software + resilient systems</p>
+              <p><span>&gt;</span> tooling: Python, C#, C, Java, MATLAB, CI/CD</p>
+              <p><span>&gt;</span> security: SSDLC, threat modeling, SAST, DAST, SCA</p>
+              <p><span>&gt;</span> project: local-first AI agent framework</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-band intro-grid" aria-label="Core strengths">
+          <article>
+            <span class="metric">01</span>
+            <h2>Secure software delivery</h2>
+            <p>Embedding secure coding, SAST, OWASP practices, and vulnerability management into engineering workflows.</p>
+          </article>
+          <article>
+            <span class="metric">02</span>
+            <h2>Systems thinking</h2>
+            <p>Designing across software, infrastructure, embedded systems, and model-based workflows where reliability matters.</p>
+          </article>
+          <article>
+            <span class="metric">03</span>
+            <h2>Automation mindset</h2>
+            <p>Building Python tooling and API integrations that reduce manual work and improve operational response.</p>
+          </article>
+        </section>
+
+        <section id="work" class="timeline-section" aria-labelledby="work-title">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="work-title">Software, systems, and security engineering across complex environments.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-date">Jan 2026 - Present</div>
+              <div class="timeline-content">
+                <h3>Software / Systems Engineer I</h3>
+                <p class="company">Honeywell Aerospace</p>
+                <p>
+                  Developing and maintaining software systems using MATLAB, Simulink, .NET, and Python while contributing
+                  to secure design, validation workflows, model-based development, and system-level architecture discussions.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">Jun 2024 - Jan 2026</div>
+              <div class="timeline-content">
+                <h3>Cyber Security Architect / Engineer I</h3>
+                <p class="company">Honeywell Aerospace</p>
+                <p>
+                  Engineered security workflows, integrated ServiceNow and Jira APIs, supported AI/ML system security,
+                  implemented SAST practices, and helped embed security controls into production engineering workflows.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="project" class="project-section" aria-labelledby="project-title">
+          <div class="section-heading">
+            <p class="eyebrow">Featured build</p>
+            <h2 id="project-title">Mi-Agent: secure local-first AI agent framework.</h2>
+          </div>
+
+          <div class="project-layout">
+            <div class="project-copy">
+              <p>
+                Mi-Agent is a production-grade Python framework for autonomous task execution on constrained systems,
+                including Raspberry Pi-class hardware. The core design centers on defense-in-depth for LLM-driven tools.
+              </p>
+              <div class="project-stats" aria-label="Project stats">
+                <span><strong>11k+</strong> lines of Python</span>
+                <span><strong>Async</strong> event bus</span>
+                <span><strong>Local</strong> execution model</span>
+              </div>
+            </div>
+
+            <div class="feature-list">
+              <article>
+                <h3>Sandboxed execution</h3>
+                <p>Workspace isolation, strict resource limits, shell command filtering, and safer Python execution paths.</p>
+              </article>
+              <article>
+                <h3>Agent orchestration</h3>
+                <p>Multi-agent fan-out/fan-in workflows, dynamic model routing, failover, and secure tool dispatch.</p>
+              </article>
+              <article>
+                <h3>Threat-aware design</h3>
+                <p>Mitigations for prompt injection, command injection, privilege escalation, and tool abuse patterns.</p>
+              </article>
+              <article>
+                <h3>Operational visibility</h3>
+                <p>SQLite-backed semantic memory and telemetry for introspection, traceability, and system behavior review.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="skills-section" aria-labelledby="skills-title">
+          <div class="section-heading">
+            <p class="eyebrow">Capability map</p>
+            <h2 id="skills-title">Software, security, and systems skills.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article>
+              <h3>Languages & development</h3>
+              <p>Python, C#, C, Java, MATLAB, OOP, problem solving</p>
+            </article>
+            <article>
+              <h3>Security engineering</h3>
+              <p>SSDLC, threat modeling, PKI, OWASP, vulnerability management, risk assessment, security audits, ethical hacking, encryption</p>
+            </article>
+            <article>
+              <h3>Testing & assurance</h3>
+              <p>SAST, DAST, SCA, Coverity, secure code review, validation workflows</p>
+            </article>
+            <article>
+              <h3>Systems & infrastructure</h3>
+              <p>Embedded systems, Embedded Linux, distributed systems, system hardening, APIs, automation, CI/CD, version control</p>
+            </article>
+            <article>
+              <h3>Engineering methods</h3>
+              <p>Agile methodologies, model-based development, Simulink, cross-functional communication</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Open to software, systems, and security engineering conversations.</h2>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:coleazill@gmail.com">coleazill@gmail.com</a>
+            <a href="https://github.com/Cole-Z">GitHub</a>
+            <a href="https://www.linkedin.com/in/cole-zill-0b0273161/">LinkedIn</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
