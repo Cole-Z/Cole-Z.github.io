@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CZ">
+  <rect width="64" height="64" fill="#08110e"/>
+  <path d="M16 16h38v38H16z" fill="#59ff9a"/>
+  <path d="M10 10h38v38H10z" fill="#101c18" stroke="#2b5b48" stroke-width="2"/>
+  <text
+    x="29"
+    y="37"
+    fill="#ecfff7"
+    font-family="Consolas, Menlo, monospace"
+    font-size="20"
+    font-weight="700"
+    text-anchor="middle"
+  >CZ</text>
+</svg>
