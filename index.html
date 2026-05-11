@@ -1,210 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Cole Zill is a software and security engineer building secure systems, automation, and local-first AI infrastructure."
-    >
-    <title>Cole Zill | Software & Security Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+      content="Solid Posture helps organizations safely adopt AI, strengthen cybersecurity programs, and prioritize practical improvements across infrastructure, applications, monitoring, and testing."
+    />
+    <title>Solid Posture | AI Security & Cybersecurity Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <a class="brand" href="#top" aria-label="Cole Zill home">
-          <span class="brand-mark">CZ</span>
-          <span class="brand-copy">
-            <span>Cole Zill</span>
-            <small>Software / Security</small>
-          </span>
-        </a>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Solid Posture home">
+        <span class="brand-mark" aria-hidden="true">SP</span>
+        <span>Solid Posture</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="services/index.html">Services</a>
+        <a href="standards.html">Risk & Compliance</a>
+        <a href="#markets">Markets</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#project">Mi-Agent</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/solid-posture-hero.png"
+          alt="A business laptop showing security posture dashboards and operational readiness indicators."
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI security first. Full-spectrum cybersecurity behind it.</p>
+          <h1 id="hero-title">Secure AI adoption. Strengthen everything around it.</h1>
+          <p class="hero-copy">
+            Solid Posture helps organizations identify AI risk, harden digital infrastructure,
+            improve application security, and build a practical security roadmap without
+            enterprise-level complexity.
+          </p>
+          <div class="hero-actions" aria-label="Primary calls to action">
+            <a class="button primary" href="services/ai-surface-audit.html">Start with an AI Surface Audit</a>
+            <a class="button secondary" href="#services">Explore all services</a>
+          </div>
+        </div>
+      </section>
 
-        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-          <span class="toggle-track" aria-hidden="true">
-            <span class="toggle-icon toggle-icon-dark">☾</span>
-            <span class="toggle-icon toggle-icon-light">☼</span>
-            <span class="toggle-thumb"></span>
-          </span>
-        </button>
-      </header>
-
-      <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow">Phoenix, AZ / secure systems / AI infrastructure</p>
-            <h1 id="hero-title">Software engineer building secure, reliable systems with a security-first mindset.</h1>
-            <p class="hero-lede">
-              I work across software engineering, security architecture, automation, and AI-enabled systems.
-              My focus is practical: make complex systems safer, easier to operate, and resilient under real constraints.
+      <section class="section ai-spotlight" aria-labelledby="ai-spotlight-title">
+        <div class="ai-spotlight-layout">
+          <div class="ai-spotlight-copy">
+            <div class="section-kicker">Flagship service</div>
+            <h2 id="ai-spotlight-title">AI Surface Audit</h2>
+            <p>
+              AI is already entering business workflows through chat tools, productivity
+              suites, browser extensions, vendors, and employee experimentation. The
+              emerging risk is not just the tool itself. It is the sensitive data, unclear
+              policy, unmanaged usage, and misplaced trust that form around it.
             </p>
-            <div class="hero-actions" aria-label="Primary links">
-              <a class="button primary" href="#project">View featured project</a>
-              <a class="button secondary" href="assets/cole-zill-resume.docx">View resume</a>
-              <a class="button secondary" href="mailto:coleazill@gmail.com">Email me</a>
+            <p>
+              The AI Surface Audit gives leaders a clear view of how AI is being used,
+              where exposure may exist, and what practical controls should come first.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="services/ai-surface-audit.html">View AI Surface Audit</a>
+              <a class="button dark" href="#contact">Request discovery</a>
             </div>
           </div>
-
-          <aside class="status-panel" aria-label="Engineer profile summary">
-            <div class="window-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-              <code>profile.sys</code>
+          <div class="ai-outcomes" aria-label="AI Surface Audit outcomes">
+            <div>
+              <span>01</span>
+              <h3>Find AI usage</h3>
+              <p>Identify approved and informal AI tools across business workflows.</p>
             </div>
-            <div class="terminal-lines">
-              <p><span>&gt;</span> role: Software / Systems Engineer</p>
-              <p><span>&gt;</span> domain: secure software + resilient systems</p>
-              <p><span>&gt;</span> tooling: Python, C#, C, Java, MATLAB, CI/CD</p>
-              <p><span>&gt;</span> security: SSDLC, threat modeling, SAST, DAST, SCA</p>
-              <p><span>&gt;</span> project: local-first AI agent framework</p>
+            <div>
+              <span>02</span>
+              <h3>Reduce data exposure</h3>
+              <p>Review where sensitive documents, customer data, or operational details may be entering AI systems.</p>
             </div>
-          </aside>
-        </section>
-
-        <section class="section-band intro-grid" aria-label="Core strengths">
-          <article>
-            <span class="metric">01</span>
-            <h2>Secure software delivery</h2>
-            <p>Embedding secure coding, SAST, OWASP practices, and vulnerability management into engineering workflows.</p>
-          </article>
-          <article>
-            <span class="metric">02</span>
-            <h2>Systems thinking</h2>
-            <p>Designing across software, infrastructure, embedded systems, and model-based workflows where reliability matters.</p>
-          </article>
-          <article>
-            <span class="metric">03</span>
-            <h2>Automation mindset</h2>
-            <p>Building Python tooling and API integrations that reduce manual work and improve operational response.</p>
-          </article>
-        </section>
-
-        <section id="work" class="timeline-section" aria-labelledby="work-title">
-          <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2 id="work-title">Software, systems, and security engineering across complex environments.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-date">Jan 2026 - Present</div>
-              <div class="timeline-content">
-                <h3>Software / Systems Engineer I</h3>
-                <p class="company">Honeywell Aerospace</p>
-                <p>
-                  Developing and maintaining software systems using MATLAB, Simulink, .NET, and Python while contributing
-                  to secure design, validation workflows, model-based development, and system-level architecture discussions.
-                </p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-date">Jun 2024 - Jan 2026</div>
-              <div class="timeline-content">
-                <h3>Cyber Security Architect / Engineer I</h3>
-                <p class="company">Honeywell Aerospace</p>
-                <p>
-                  Engineered security workflows, integrated ServiceNow and Jira APIs, supported AI/ML system security,
-                  implemented SAST practices, and helped embed security controls into production engineering workflows.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="project" class="project-section" aria-labelledby="project-title">
-          <div class="section-heading">
-            <p class="eyebrow">Featured build</p>
-            <h2 id="project-title">Mi-Agent: secure local-first AI agent framework.</h2>
-          </div>
-
-          <div class="project-layout">
-            <div class="project-copy">
-              <p>
-                Mi-Agent is a production-grade Python framework for autonomous task execution on constrained systems,
-                including Raspberry Pi-class hardware. The core design centers on defense-in-depth for LLM-driven tools.
-              </p>
-              <div class="project-stats" aria-label="Project stats">
-                <span><strong>11k+</strong> lines of Python</span>
-                <span><strong>Async</strong> event bus</span>
-                <span><strong>Local</strong> execution model</span>
-              </div>
+            <div>
+              <span>03</span>
+              <h3>Build usable policy</h3>
+              <p>Create practical guidance employees can follow without slowing useful adoption.</p>
             </div>
-
-            <div class="feature-list">
-              <article>
-                <h3>Sandboxed execution</h3>
-                <p>Workspace isolation, strict resource limits, shell command filtering, and safer Python execution paths.</p>
-              </article>
-              <article>
-                <h3>Agent orchestration</h3>
-                <p>Multi-agent fan-out/fan-in workflows, dynamic model routing, failover, and secure tool dispatch.</p>
-              </article>
-              <article>
-                <h3>Threat-aware design</h3>
-                <p>Mitigations for prompt injection, command injection, privilege escalation, and tool abuse patterns.</p>
-              </article>
-              <article>
-                <h3>Operational visibility</h3>
-                <p>SQLite-backed semantic memory and telemetry for introspection, traceability, and system behavior review.</p>
-              </article>
+            <div>
+              <span>04</span>
+              <h3>Prioritize controls</h3>
+              <p>Turn AI risk into a clear action plan tied to business impact and maturity.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="skills" class="skills-section" aria-labelledby="skills-title">
-          <div class="section-heading">
-            <p class="eyebrow">Capability map</p>
-            <h2 id="skills-title">Software, security, and systems skills.</h2>
-          </div>
-
-          <div class="skills-grid">
-            <article>
-              <h3>Languages & development</h3>
-              <p>Python, C#, C, Java, MATLAB, OOP, problem solving</p>
-            </article>
-            <article>
-              <h3>Security engineering</h3>
-              <p>SSDLC, threat modeling, PKI, OWASP, vulnerability management, risk assessment, security audits, ethical hacking, encryption</p>
-            </article>
-            <article>
-              <h3>Testing & assurance</h3>
-              <p>SAST, DAST, SCA, Coverity, secure code review, validation workflows</p>
-            </article>
-            <article>
-              <h3>Systems & infrastructure</h3>
-              <p>Embedded systems, Embedded Linux, distributed systems, system hardening, APIs, automation, CI/CD, version control</p>
-            </article>
-            <article>
-              <h3>Engineering methods</h3>
-              <p>Agile methodologies, model-based development, Simulink, cross-functional communication</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Open to software, systems, and security engineering conversations.</h2>
+            <div class="section-kicker">Service ecosystem</div>
+            <h2 id="services-title">Everything needed to move from AI risk to stronger security posture.</h2>
           </div>
-          <div class="contact-links">
-            <a href="mailto:coleazill@gmail.com">coleazill@gmail.com</a>
-            <a href="https://github.com/Cole-Z">GitHub</a>
-            <a href="https://www.linkedin.com/in/cole-zill-0b0273161/">LinkedIn</a>
-          </div>
-        </section>
-      </main>
-    </div>
+          <p>
+            AI risk is the entry point for many organizations. Solid Posture also supports
+            the infrastructure, software, monitoring, and validation work needed to keep
+            that risk from spreading across the business.
+          </p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="service-ecosystem">
+          <article class="service-feature">
+            <span>Flagship</span>
+            <h3>AI & Emerging Risk</h3>
+            <p>
+              Start with the AI Surface Audit to understand tool usage, data exposure,
+              prompt injection concerns, employee behavior, and AI policy readiness.
+            </p>
+            <ul>
+              <li><a href="services/ai-surface-audit.html">AI Surface Audit</a></li>
+              <li>AI usage policy guidance</li>
+              <li>AI risk roadmap</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>Foundation</span>
+            <h3>Infrastructure Readiness</h3>
+            <p>
+              Strengthen the devices, access paths, backups, networks, and operational
+              controls that AI-enabled work depends on.
+            </p>
+            <ul>
+              <li><a href="services/digital-backbone-scan.html">Digital Backbone Scan</a></li>
+              <li>Access and password review</li>
+              <li>Backup and recovery readiness</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>Build securely</span>
+            <h3>Application Security</h3>
+            <p>
+              Find weaknesses in software dependencies, source code, running applications,
+              APIs, and architecture before they create customer or operational exposure.
+            </p>
+            <ul>
+              <li><a href="services/software-composition-analysis.html">Software Composition Analysis</a></li>
+              <li><a href="services/sast.html">SAST</a> and <a href="services/dast.html">DAST</a></li>
+              <li><a href="services/threat-modeling.html">Threat Modeling</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <span>Stay ready</span>
+            <h3>Assurance & Validation</h3>
+            <p>
+              Track posture over time and validate controls through scoped testing,
+              recurring monitoring, and remediation guidance.
+            </p>
+            <ul>
+              <li><a href="services/continuous-monitoring.html">Continuous Monitoring</a></li>
+              <li><a href="services/penetration-testing.html">Penetration Testing</a></li>
+              <li>Retesting and remediation support</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>Full program</span>
+            <h3>Secure SDLC & Risk</h3>
+            <p>
+              Start with granular services or move into a full secure-development program
+              that carries security from planning through operations.
+            </p>
+            <ul>
+              <li><a href="services/risk-assessments-compliance.html">Risk Assessments & Compliance Readiness</a></li>
+              <li><a href="services/secure-development-lifecycle.html">Secure Development Lifecycle</a></li>
+              <li>NIST CSF / CIS Controls mapping</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="service-pathways" aria-label="Service pathways">
+          <a href="services/ai-surface-audit.html">
+            <span>Best first step</span>
+            AI Surface Audit
+          </a>
+          <a href="services/index.html">
+            <span>Full catalog</span>
+            Explore all services
+          </a>
+          <a href="standards.html">
+            <span>Framework alignment</span>
+            Risk & Compliance approach
+          </a>
+        </div>
+      </section>
+
+      <section class="section markets" id="markets" aria-labelledby="markets-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Who we help</div>
+            <h2 id="markets-title">Built for organizations that need digestible cybersecurity, not massive enterprise overhead.</h2>
+          </div>
+          <p>
+            Solid Posture is designed for teams that need practical security awareness,
+            clear priorities, and right-sized support across AI, infrastructure, software,
+            and ongoing risk management.
+          </p>
+        </div>
+        <div class="market-grid">
+          <article>
+            <h3>Small businesses</h3>
+            <p>Help owners and operators protect accounts, devices, data, vendors, and AI usage without building an enterprise security department.</p>
+          </article>
+          <article>
+            <h3>Lean internal teams</h3>
+            <p>Support organizations where IT, operations, compliance, and security responsibilities are shared across a small group.</p>
+          </article>
+          <article>
+            <h3>Regulated and trusted services</h3>
+            <p>Provide practical readiness for clinics, professional services, nonprofits, contractors, and other groups handling sensitive information.</p>
+          </article>
+          <article>
+            <h3>Digital operators</h3>
+            <p>Strengthen companies that rely on SaaS tools, websites, APIs, cloud systems, mobile workforces, and vendor-connected workflows.</p>
+          </article>
+          <article>
+            <h3>Growing startups</h3>
+            <p>Bring security into product, AI adoption, customer trust, and software delivery before growth turns small gaps into larger exposure.</p>
+          </article>
+          <article>
+            <h3>Underserved sectors</h3>
+            <p>Make cybersecurity approachable for rural operators, logistics firms, agricultural businesses, and local organizations often left out of enterprise security models.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section standards-preview" id="standards" aria-labelledby="standards-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Standards-informed work</div>
+            <h2 id="standards-title">Recommendations mapped to recognized cybersecurity frameworks.</h2>
+          </div>
+          <p>
+            Solid Posture aligns assessments and roadmaps to established standards where
+            they fit the client environment, maturity level, and regulatory context.
+          </p>
+        </div>
+        <div class="standard-pill-grid" aria-label="Referenced cybersecurity standards and frameworks">
+          <span>SOC 2</span>
+          <span>ISO/IEC 27001</span>
+          <span>NIST CSF 2.0</span>
+          <span>HIPAA</span>
+          <span>GDPR</span>
+          <span>DO-326A / ED-202A</span>
+          <span>CIS Controls</span>
+          <span>OWASP</span>
+        </div>
+        <p class="standards-note">
+          Framework references guide assessment structure and remediation planning. They
+          do not replace legal, audit, or certification services.
+        </p>
+        <a class="button dark" href="standards.html">View risk & compliance approach</a>
+      </section>
+
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="section-kicker">How engagement works</div>
+        <h2 id="process-title">A direct path from uncertainty to next steps.</h2>
+        <div class="process-rail">
+          <div>
+            <span>Discover</span>
+            <p>Understand business context, AI usage, systems, concerns, and ownership.</p>
+          </div>
+          <div>
+            <span>Assess</span>
+            <p>Review the practical risk surface across AI behavior and security hygiene.</p>
+          </div>
+          <div>
+            <span>Prioritize</span>
+            <p>Separate urgent exposures from longer-term improvements and operational noise.</p>
+          </div>
+          <div>
+            <span>Strengthen</span>
+            <p>Deliver a roadmap that leaders can understand, fund, and execute.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <div class="section-kicker">Start with discovery</div>
+          <h2 id="contact-title">Validate your AI and security readiness before problems compound.</h2>
+          <p>
+            Use the form to request an introductory conversation. Keep sensitive incident
+            details, passwords, patient information, and confidential files out of this message.
+          </p>
+          <a class="email-link" href="mailto:hello@solidposture.com">hello@solidposture.com</a>
+        </div>
+
+        <form class="contact-form" action="mailto:hello@solidposture.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Business email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" autocomplete="organization" />
+          </label>
+          <label>
+            What would you like to discuss?
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Request a discovery call</button>
+          <p class="privacy-note">
+            This early form is for general inquiry only. Do not submit sensitive operational,
+            regulated, or incident-response information.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Solid Posture. Practical cybersecurity for safer growth.</span>
+      <a href="#top">Back to top</a>
+    </footer>
   </body>
 </html>
