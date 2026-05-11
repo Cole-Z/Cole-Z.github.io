@@ -262,6 +262,7 @@ h3 {
 .section-band article,
 .timeline-content,
 .project-section,
+.github-project-card,
 .skills-grid article,
 .contact-section {
   border: 1px solid var(--line);
@@ -345,6 +346,7 @@ h3 {
 
 .timeline-section,
 .project-section,
+.github-projects-section,
 .skills-section,
 .contact-section {
   margin: 40px 0 96px;
@@ -428,6 +430,50 @@ h3 {
   background: color-mix(in srgb, var(--surface-strong) 58%, transparent);
 }
 
+.github-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.github-project-card {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+  padding: 24px;
+}
+
+.project-card-header {
+  display: grid;
+  gap: 8px;
+}
+
+.project-card-header span {
+  color: var(--accent-2);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.github-project-card p {
+  color: var(--muted);
+}
+
+.project-link {
+  align-self: end;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.projects-cta {
+  margin-top: 22px;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -498,6 +544,7 @@ h3 {
 
   .section-band,
   .skills-grid,
+  .github-projects-grid,
   .feature-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -541,6 +588,7 @@ h3 {
 
   .section-band,
   .skills-grid,
+  .github-projects-grid,
   .feature-list,
   .timeline-item {
     grid-template-columns: 1fr;
@@ -559,6 +607,7 @@ h3 {
   .section-band article,
   .timeline-content,
   .project-section,
+  .github-project-card,
   .skills-grid article,
   .contact-section {
     box-shadow: 7px 7px 0 var(--shadow);
@@ -620,6 +669,7 @@ h3 {
   .terminal-lines,
   .section-band article,
   .timeline-content,
+  .github-project-card,
   .skills-grid article {
     padding: 18px;
   }
